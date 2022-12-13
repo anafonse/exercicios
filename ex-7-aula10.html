@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadorinha</title>
+    <style>
+        ::selection {
+            background-color: rgb(234, 0, 199);
+            color: rgb(161, 224, 255);
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgba(249, 210, 235, 0.501);
+            color: rgb(157, 48, 203);
+        }
+        
+        h1 {
+            color: darkviolet;
+            text-align: center;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            margin-bottom: 10px;
+             background-image: linear-gradient(to right, rgba(247, 133, 190, 0.779), rgba(163, 64, 234, 0.607), rgba(247, 133, 190, 0.779));
+        }
+
+        a {
+            color: rgb(255, 0, 200);
+            text-decoration: none;
+            
+        }
+        a:hover {
+            color: rgb(105, 178, 255);
+        }
+
+
+        #textin {
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 80px;
+        }
+
+        #result {
+            width: 150px;
+            margin: 30px;
+            padding: 25px;
+            border: solid 1px hotpink;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        #sub {
+            width: 150px;
+            margin: 30px;
+            padding: 25px;
+            border: solid 1px hotpink;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        #divi {
+            width: 150px;
+            margin: 30px;
+            padding: 25px;
+            border: solid 1px hotpink;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        #mult {
+            width: 150px;
+            margin: 30px;
+            padding: 25px;
+            border: solid 1px hotpink;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadorinha! [+ - / *]</h1>    
+    <hr>
+    <div id="textin">
+        <p>
+            Criando uma calculadora simples, apenas com as operações báricas da matemática.  
+
+             Aula de Nº 10 do Profª Gustavo Guanabara em <a href="https://www.cursoemvideo.com/curso/javascript/aulas/entendendo-o-dom/modulos/eventos-dom/" target="_blank">Curso em video</a>.
+        </p>
+    </div>   
+    <p>Insira aqui o número que você deseja somar</p>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="soma" onclick="somar()">
+    <div id="result"><strong>Resultado</strong></div>
+    <hr>
+
+    <p>Insira aqui o número que você deseja subtrair</p>
+    <div>
+        <input type="number" name="txtsub1" id="txtsub1"> -
+        <input type="number" name="txtsub2" id="txtsub2">
+        <input type="button" value="subtrair" onclick="subtrai()">
+        <div id="sub"><strong>Resultado</strong></div>
+    </div>
+    <hr>
+
+    <p>Insira aqui o número que você deseja dividir</p>
+    <div>
+        <input type="number" name="txtdivi1" id="txtdivi1"> /
+        <input type="number" name="txtdivi2" id="txtdivi2">
+        <input type="button" value="dividir" onclick="divide()">
+        <div id="divi"><strong>Resultado</strong></div>
+    </div>
+    <hr>
+
+    <p>Insira aqui o número que você deseja mutiplicar</p>
+    <div>
+        <input type="number" name="txtmulti1" id="txtmulti1"> *
+        <input type="number" name="txtmulti2" id="txtmulti2">
+        <input type="button" value="multiplicar" onclick="multi()">
+        <div id="mult"><strong>Resultado</strong></div>
+    </div>    
+    <script>
+        function somar () {
+           var tn1 = document.getElementById('txtn1')
+           var tn2 = document.querySelector('input#txtn2')
+
+           var result = document.getElementById('result') 
+
+           var n1 = Number(tn1.value)
+           var n2 = Number(tn2.value)
+           var soma = n1 + n2
+           result.innerHTML = `${n1} + ${n2} = <strong>${soma}</strong>`
+        }
+
+        function subtrai () {
+            var sub1 = document.getElementById('txtsub1')
+            var sub2 = document.getElementById('txtsub2')
+
+            var sub = document.getElementById('sub')
+
+            var subit1 = Number(sub1.value) 
+            var subit2 = Number(sub2.value)
+            var subtracao = subit1 - subit2
+            
+            sub.innerHTML = `${subit1} - ${subit2} = <strong>${subtracao}</strong>`
+
+        }
+        
+        function divide() {
+             var d1 = document.getElementById('txtdivi1')
+             var d2 = document.getElementById('txtdivi2')
+
+            var divi = document.getElementById('divi')
+
+            var divi1 = Number(d1.value)
+            var divi2 = Number(d2.value)
+            var divisao = divi1 / divi2
+
+            divi.innerHTML = `${divi1} / ${divi2} = <strong>${divisao}</strong>`
+
+        }
+
+        function multi() {
+            var mu1 = document.getElementById('txtmulti1')
+            var mu2 = document.getElementById('txtmulti2')
+
+            var mult = document.getElementById('mult')
+
+            var multipli1 = Number(mu1.value)
+            var multipli2 = Number(mu2.value)
+
+            var multiplicacao = multipli1 * multipli2
+            
+            mult.innerHTML = `${multipli1} * ${multipli2} = ${multiplicacao}`
+        
+
+        }
+
+
+
+    </script>    
+</body>
+</html> 
