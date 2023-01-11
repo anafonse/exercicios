@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    * {
+    margin: 0;
+}
+::selection {
+    background-color: #149761;
+    color: aliceblue;
+}
+
+body {
+    background-color: white ;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 5px;   
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #0ead6b ;
+
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #0ead6b ;
+}
+
+.cabecalho {
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 40px 10px;
+}
+
+img {
+    width: 200px;
+}
+
+.div1 {
+    color: #0f6642;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: solid 1px #0ead6b;
+    border-radius: 5px 5px 5px 5px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    color: #0f6642;
+    width: 100%;
+    background-color:white;
+    position: absolute;
+    bottom: 0;
+}
+</style>
+
+<title>Document</title>
+</head>
+<body>
+    <img src="/LogoDescomplica.png" alt="">
+    <div class="cabecalho">
+    <h2>Tarefa Descomplica</h2>
+    <h3>Fundamentos do JavaScript</h3>
+    <br><br>
+<div class="div1">
+    <p>Nome</p>
+    <div class="nome"><input type="text" name="nome" id="nome"></div>
+    <p>Sobrenome</p> 
+    <div class="sobrenome"><input name="sobrenome" id="sobrenome"></div>
+    <p>E-mail</p>
+    <div class="email"><input name="email" id="email"></div>  
+    
+</div>
+<div class="butao">
+    <button onClick="enviar()">Enviar</button>
+</div>
+<script>
+    function enviar() {
+
+      var Nome = document.getElementById('nome').value
+      var Sobrenome = document.getElementById('sobrenome').value
+      var Email = document.getElementById('email').value
+ 
+       alert(Nome + " " + Sobrenome + " " + Email)
+    }
+</script>
+<footer>
+    <ul>
+        <li>Aluno: Ana Leticia</li>
+        <li>RA:2223443 </li>
+        <li>E-mail: nana.fnsc@gmail.com</li>
+    </ul>
+<img src="/undraw_Designer_girl_re_h54c.png" alt="">
+</footer>
+</body> 
+</html>

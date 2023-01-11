@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ::selection {
+        background-color: aliceblue;
+        color: rgb(40, 207, 171);
+    }
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    h2, h3 {
+        color: rgb(22, 165, 110);
+        text-align: center;
+    }
+
+    p {
+        width: 700px;
+        padding: 10px;
+        margin-left: 50px;
+        color: rgb(11, 147, 147);
+    }
+
+    img {
+        width: 200px;
+    }
+
+    button {
+        margin: 20px;        
+    }
+
+    input {
+        background-color: rgb(223, 244, 241);
+        margin: 20px;
+    }
+
+    .div1 {
+        color: darkcyan;
+        margin-left: 25px;
+    }
+
+
+</style>
+<body>    
+    <img src="/LogoDescomplica.png" alt="">
+    <h2>Tarefa Descomplica</h2>
+    <h3>Fundamentos do JavaScript</h3>
+    <p>
+        Nesta atividade prática, crie um documento html, dentro dele crie 2 campos: valor1, valor2. 
+        <br>
+        Em seguida crie uma função em javascript que pegue os valores dos campos e verifique se a soma deles é maior que 10. Se for maior que 10, imprima a mensagem “Valor acima de 10” dentro de uma div. 
+        <br>
+        Crie um botão que quando clicado chama a função que você criou.
+    </p>
+    <div class="div1">
+    <div class="valor1">Valor 1: <input type="text" name="nome" id="valor1"></div>
+    <div class="valor2">Valor 2: <input name="sobrenome" id="valor2"></div>
+    
+    <div>
+        <button onclick="verificar()">Resultado</button>
+    </div>    
+</body>
+<script>
+
+    function verificar() {
+        
+        valor1 = document.getElementById('valor1').value
+        valor2 = document.getElementById('valor2').value
+        soma = parseInt(valor1)+ parseInt(valor2)
+        
+        if (soma>10){ alert (valor1 + " + " + valor2 + " = " + soma + " Valor acima de 10")}
+
+        else {alert(valor1 + " + " + valor2 + " = " + soma + " O resultado é menor que 10")}
+        
+    }    
+</script>
+<footer>
+    <img src="/undraw_Female_avatar_re_l6cx.png" alt="" class="avatar" style="position:absolute; bottom:0px; width: 100px;">
+    <ul style="position: absolute; bottom: 0; list-style: none; display: inline; color: rgb(11, 155, 124); margin-left: 50px;">
+        <li>Aluno: Ana Leticia da Fonseca Azevedo</li>
+        <li>RA:2223443 </li>
+        <li>E-mail: nana.fnsc@gmail.com</li>
+    </ul>
+</footer>
+</html>
