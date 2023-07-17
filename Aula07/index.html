@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 07</title>
+</head>
+<body>
+    <h1>Operadores Aritméticos</h1> 
+    <h2>Aula 07 - Cuso em Video Pfrº Gustavo Guanabara &#129504</h2>
+
+    <p>
+        ❗ Atenção especial em usar esses operadoes. Eles têm ordem certa de execução e não receber erro deles não significa que o programa esta necessariamente certo. Sempre fazer triple check. <br><br>
+
+        ⚠️ Sobre operadores; Sao eles: <br>
+
+        <div class="sinais">
+            <strong> + </strong>  :&nbsp;&nbsp;  ADIÇÃO <br>
+            <strong> - </strong>  :&nbsp;&nbsp;  SUBTRAÇÃO <br>
+            <strong> * </strong>  :&nbsp;&nbsp;  MULTIPLICAÇÃO<br>
+            <strong> / </strong>  :&nbsp;&nbsp;  DIVISÃO <br>
+            <strong> % </strong>  :&nbsp;&nbsp;  RESTO DIVISÃO <br>
+            <strong> ** </strong>  :&nbsp;&nbsp;  POTENCIAÇÃO <br><br>
+        </div><br>
+       
+        Precedencia de Operadores: <br><br>
+        Assim como na matematica, a precedendia dos operadores tem a mesma regra: <br><br>
+        
+            <div class="op">
+                <img src="/Aula07/img/op.png" alt="Ordem de Precedencia"> <p>Ordem de precedencia na matematica</p>
+                <img src="/Aula07/img/ss.png" alt="" > <p>Profº Guanabara. Aula 07. Operadores Aritméticos</p>
+            </div>
+        
+        <br>
+        O JavaScript seguirá a mesma regra:  👁️👄👁️<br><br>
+        Ex > <br>
+        5 + 2 / 3 = <strong>6,5</strong> 
+        <br><br>
+        Caso voce queira fazer primeiro a adição, colocar parenteses: <br>
+        ( 5 + 3 ) / 2 = <strong> 4 </strong> &nbsp;! <br>
+        Isso acontece por que, assim como na matemática, parênteses vêm antes de qualquer operação. <br><br>
+
+
+        <strong> Observação </strong> &#11088; &nbsp; Se caso a expressão for (6 * 2 / 10) a ordem de execução vai ser de quem tiver antes, se a multiplicação esta antes, faça ela antes! Nesse caso, a ordem dos fatores não altera o resultado <br><br>
+
+        <strong>AUTO-Atribuições </strong> <br><br>
+          Se uma variavel "n" vale 3 e se quer mudar seu valor, usa-se n = n + 4, como no exemplo abaixo. Agora, em vez de 3, ela esta valendo 7
+
+          <br><br>
+        <img src="/Aula07/img/ss2.png" alt=""> <br><br><br>
+
+        <strong>Observação</strong> <br> <br>
+        +=, -=, *=, /=, **=, %= apenasmente valerão se <strong>A VARIAVEL RECEBER ELA MESMA (OU SEJA N) (+ - * / **) x</strong>, ou seja no caso do exemplo: <br>
+        n = 3 <br>
+        n = n + 4 (ou seja, 3 + 4) <br>
+        agora n vale <strong>7</strong>
+
+
+
+    </p>
+
+    <script>    
+         
+        var num1 = Number.parseFloat(window.prompt("Digite um numero: "))
+        var num2 = Number.parseFloat(window.prompt("Digite outro numero: "))
+        var soma = num1 + num2
+
+        window.alert(`${num1} + ${num2}  = ${soma}`)
+        
+    </script>
+</body>
+</html>
