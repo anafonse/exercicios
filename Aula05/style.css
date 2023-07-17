@@ -1,0 +1,87 @@
+::selection {
+    background-color: rgb(255, 254, 224);
+    color: deeppink;
+}
+
+body {
+    background-color: rgb(255, 222, 228);
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(162, 94, 189);
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: hotpink;
+    text-transform: none;
+    text-decoration: none;
+}
+
+a:hover {
+    color: cornflowerblue;
+}
+
+h2 {
+    font: normal 20pt monospace;
+    text-align: center;
+    color: rgb(255, 0, 98);    
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 102, 123, 0.75), rgba(0, 0, 0, 0));
+}
+
+strong {
+    color: rgb(255, 82, 177);
+    font-style: italic;
+}
+
+mark {
+    background-color: paleturquoise;
+    color: rgb(16, 47, 75);
+    font-style: italic;
+}
+
+.container {
+    width: 500px;
+    font-size: large;
+    width: 500px;
+    display: inline;
+} 
+
+.legenda2 {
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+}
+
+.legenda {
+     width: 100%;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+}
+
+ul{
+
+    margin: 20px;
+    border: 1px solid rgb(255, 238, 216);
+    list-style-type: "☆ ";
+    line-height: 01.em;
+}
+
+
+img {
+    border-radius: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
