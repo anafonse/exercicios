@@ -1,0 +1,51 @@
+::selection {
+    background-color: antiquewhite;
+    color: salmon;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: antiquewhite;
+    color: dimgrey;
+}
+
+h2 {
+    text-align: center;
+    color: salmon;
+}
+
+
+p.link {
+    text-align: center;
+    width: 50%;
+    color: darkgray;
+    font-size: large;
+}
+
+p.placeholder {
+    width: 80%;
+    border: 1px solid salmon;
+    padding: 10px;
+}
+
+p.trivia {
+    width: 80%;
+    border: 1px solid salmon;
+    padding: 10px;
+}
+
+mark {
+    background-color: blanchedalmond;
+    font-size: larger;
+    margin: 1em;
+    color: chocolate;
+}
+
+a {
+    text-decoration: none;
+    text-transform: none;
+}
+
+b {
+    color: salmon;
+}

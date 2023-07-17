@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>JavaScript Exercicio 3</title>
+</head>
+<body>
+     <h2>Exercicio JavaScript</h2>
+     <h3>Aula 6 Manipulando dados</h3>
+     <hr>
+     <p>Continuação das anotações da aula 6:<a href="/Aula06/cont-ex03/index.html">&#11088;</a> (é pra clicar na estrela)</p>
+     <div class="container">        
+        <p class="intro">  
+        var <b>nome</b> = window.prompt('Qual seu nome?') <br>
+            isso significa na prática que a variavel "<b>nome</b>" vai receber o resultado do prompt que aparecer na janela       <br><br>    
+        JavaScript <strong>É CASE SENSITIVE</strong>, nunca esquecer dessa merda. Outra coisa pra sempre lembrar é que tudo que entre em <b>window.prompt ("valor aqui inserido")</b> é uma <strong>STRING</strong>
+         <br><br>
+        </p>
+        
+        <p class="errado">
+            <br>
+            <strong>A receita pro desastre</strong>: 
+            <br><br>
+            var num1 = window.prompt("Digite um numero")<br>
+            var num2 = window.prompt("Digite outro numero")<br>
+            var soma = num1 + num2<br><br>
+            window.alert("O Resultado da soma dos dois numeros digitados é " + soma)<br>
+            <br><br>
+            <mark>Esse é jeito <strong><i>ERRADO</i></strong> de fazer as somas. As variáveis <b>num1</b> e <b>num2</b> estão sendo lidas como STRING, e por isso não é realizada a soma entre elas.</mark> <br><br>
+            O resultado disso é talvez un dos memes mais famosos da programação conteporanea &#128128;
+            <img src="/Aula06/ex03/img/ss.png" alt="">
+            <br><br>
+            
+            E,bom, isso acontece simplesmente por que quando o <b>window.alert</b> vai mostrar o "resultado", ele exibe os valores digitados como <b>strings</b> (que é o que eles são, mesmo sendo um numero), e não como <b>numeros</b> por que não foi informado a ele que <b>num1</b> e <b>num2</b> seriam numeros e ora bolas como que o JavaScrip tvai adivinhar, então, por causa disso, o <b>+</b> ali esta servindo como o concatenador de duas stings em vez de um sinal de uma operação de adição. Rá. Simples.
+            <br><br>            // + é concatenação e adição<br>
+            //(string + string) o <b>+</b> serve pra concatenação<br>
+            //(number + number) o <b>+</b> vai servir para adição<br>
+         </p>
+        <br>
+         <hr>
+        <p class="certo">
+            Ta mas se não é assim, qual é o jeito correto?
+            <br><br>
+            Pra gente fazer do jeito certo a gente tem que saber que as variaveis precisam ser transformadas em numeros para que o <i>window.prompt</i>  nao tranforme nossos numeros em strings!
+            <br><br>          
+            var num1 = <b>Number.parseInt</b>(window.prompt("Digite um numero")) <br>
+            var num2 = <b>Number.parseInt</b>(window.prompt("Digite outro numero"))  <br>
+            var soma = num1 + num2 // <i>aqui, eles ja se tornaram numeros</i> <br>
+            window.alert("O Resultado da soma dos dois numeros digitados é " + soma) <br>
+            <br><br>
+            <mark> Para que as variáveis fossem transformadas em numeros, usou-se o <b>Number.parseInt</b> antes de <i>window.prompt</i> que os transformou em numeros</mark>
+            <br><br>O resultado:
+            <img src="/Aula06//ex03/img/ss2.png" alt="">
+            <br><br>
+            <strong>ATENÇÃO !! &#128681 </strong>
+            <br><br>
+            O <b>Number.parseInt</b>  vai converter a variável pra um numero <b>INTEIRO</b>, se voce quiser um numero real (ou seja, com vírgula tipo 10,1) tem que usar o <b>Number.parseFloat</b>!
+            <br><br>
+
+            var num1 = <b>Number.parseFloat</b>(window.prompt("Digite um numero: ")) <br> 
+            var num2 = <b>Number.parseFloat</b>(window.prompt("Digite um numero: ")) <br>
+            var soma = num1 + num2 <br>    
+           window.alert("O Resultado da soma dos dois numeros digitados é " + soma) <br>             
+            <br><br>
+            <img src="/Aula06//ex03/img/ss3.png" alt=""><br>
+            
+            <strong>OBSERVAÇÃO ~~EXTREMAMENTE~~ IMPORANTE!!!!!!!!</strong>
+            <br>
+            <b>NÃO</b> usar o "del" do teclado numerico, senão não funciona. Tem que usar o "." da tecla ">", ou "." do próprio teclado numerico mesmo <b>DESDE QUE NAO SEJA O "." DO DA TECLA "DEL"!</b> <br><br>
+            <strong>Observação 2:</strong> se for necessario ter que converver de <b>string</b> pra <b>numero</b>, usa-se o <b>String(var)</b> ou só <b>var.toString()</b>
+        </p>
+
+     </div>   
+    <script>       
+        /*
+        var num1 = Number.parseFloat(window.prompt("Digite um numero: "))
+        var num2 = Number.parseFloat(window.prompt("Digite um numero: "))
+        var soma = num1 + num2
+
+       window.alert("O Resultado da soma dos dois numeros digitados é " + soma)
+
+       // + é concatenação e adição
+       //(string + string) o + serve pra concatenação
+       */
+    </script> 
+</body>
+</html>
