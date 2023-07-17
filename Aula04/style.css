@@ -1,0 +1,28 @@
+::selection {
+    background-color: linen;
+    color: deeppink;
+}
+
+body {
+    background-color: rgb(255, 220, 241);
+    font-family: 'Courier New', Courier, monospace;
+    color: blueviolet;
+}
+h2 {
+    font: normal 20pt monospace;
+    text-align: center;
+    color: rgb(238, 93, 148);    
+}
+p {
+    text-align: center;
+}
+p.aula {
+    text-align: center;
+    margin: ;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
