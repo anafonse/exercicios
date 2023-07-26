@@ -1,0 +1,16 @@
+::selection{
+    background-color: rgb(6, 176, 182);
+    color: pink;
+}
+
+body {
+    background: pink;
+    color: rgb(6, 176, 182);
+    font: normal 14pt monospace;
+}
+
+img {
+    margin: 25px;
+    width: 65%;
+    height: auto;
+  }

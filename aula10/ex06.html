@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Eventos DOM</title>
+</head>
+<body>   
+    <div id="area">
+        <p>💜</p>
+    </div>
+
+
+    <div class="explicacao">
+        <h1>Eventos DOM</h1>
+        <p>Existem incontaveis e incalculaveis eventos DOM. Para saber mais sobre eles, clique <a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank">aqui</a> :3 <br><br>
+        Alguns eventos com o mouse: <br>
+        🖤 mouseenter; <br>
+        🖤 mouseout; <br>
+        🖤 mouseup; <br>
+        🖤 mousedown; <br>
+        🖤 mousemove; <br>
+        🖤 click. e por ai vai
+
+        <br>
+        Existem tambem os touchevents, que são para eventos em aparelhos portateis como tablets e smartphones
+        <strong>observação!</strong> Existem elementos que não são compativeis com certos eventos. Sempre cverificar antes de tentar aplicar Elemento x Evento para que nao haja erro de incompatibilidade.</p>
+    </div>
+        //OBSERVAÇÃO IMPORTANTE! 'CLICK' É UMA PALAVRA RESERVADA E NAO FUNCIONA PARA CRIAR NOME DE FUNÇÃO NEM DE VARIAVEL NO JAVASCRIPT
+    <script>       
+        var area = document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrou)
+        area.addEventListener('mouseout', saiu)
+
+        function clicar() {          
+            area.innerText = 'Clicou '
+            area.style.background = 'pink'
+        }
+
+        function entrou() {          
+            area.innerText = 'Entrou '
+            area.style.background = 'hotpink'
+        }
+
+        function saiu() {          
+            area.innerText = 'Saiu '
+            area.style.background = 'lightblue'
+        }
+
+
+    </script>
+</body>
+</html>

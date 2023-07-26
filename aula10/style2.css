@@ -1,0 +1,22 @@
+body {
+    font: normal 10pt monospace;
+    color: rgb(183, 141, 238);
+    text-align: center;
+} 
+
+input {
+    color: rgb(113, 53, 224);
+    width: 150px;
+}
+
+#resultado {
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 100px;
+    height: 50px;
+    line-height:50px;
+    border-radius: 5px;
+    background-color: plum;
+    color: darkmagenta;
+    text-align: center;
+}
