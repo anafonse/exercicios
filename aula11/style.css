@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+::selection {
+    background-color: rgb(255, 68, 130);
+    color: beige;
+    
+}
+
+
+body {
+    background-color: beige;
+    font-family: 'Borel', cursive;
+    color: hotpink;
+}
+h1 {
+    text-align: center;
+    color: rgb(255, 68, 130);
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Exercicio proposto</title>
+</head>
+<body>
+    <h1>Nacionalidade </h1>
+
+    <div id="box">
+        Digite o nome do seu país (Type your country's name): <input type="text" id="país"> <input type="button" value="Verificar ✅" onclick="nacional()">
+    </div>
+
+    <div id="resultado">  </div>
+
+    <script>
+    function nacional() {
+        var naci = document.querySelector('input#país') 
+        var país = (naci.value)      
+        var result = document.querySelector('div#resultado')      
+
+        if (país == 'Brasil' || país == 'brasil') {
+            result.innerHTML = `Voce é brasileiro! `
+        } else {
+            result.innerHTML = `You are foreigner / Eres extranjero`
+        }        
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Aula 11 Nodejs</h1>
+    <p>
+        ❗️ div: # <br>
+        ❗️ class: .
+    </p>
+
+    Velocidade do carro: <input type="number" name="veloc" id="veloc"> Km/h <input type="button" value="Verificar ✅" onclick="calcular()">
+
+    <div id="result">
+
+    </div>
+    <script>
+
+        function calcular() {
+            var veloci = document.querySelector('input#veloc')
+            var resultado = document.querySelector('div#result')
+            var veloc = Number(veloci.value)
+            resultado.innerHTML = `<p>Sua velocidade é de <strong>${veloc}</strong> KM/h</p>`
+            if (veloc > 60) {
+                resultado.innerHTML += `<p>Voce está <strong>multado</strong> por escesso de velocidade</p>`
+            }
+
+            resultado.innerHTML += `<p>Dirija sempre com o cinto de segurança. Sujeito à multas.</p>` 
+            
+        }
+
+    </script>
+    
+</body>
+</html>

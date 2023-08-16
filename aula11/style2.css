@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+::selection {
+    background-color: darkblue;
+    color: cornsilk;
+}
+
+
+body {
+    color: darkblue;
+    font-family: 'Borel', cursive;
+}
+
+h1 {
+    text-align: center;
+}
+
+#box, #resultado {
+    margin: 1em;
+    border: 0.1em solid blue;
+    border-radius: 0.2em;
+    padding: 0.5em;
+}
