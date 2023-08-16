@@ -1,0 +1,42 @@
+::selection {
+    background-color: #dabef5;
+    color: #ff81b1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, #e8a6c9 0%, #dfc2a9 100%); 
+     font: normal 14pt monospace;
+}
+
+header {
+    color: #f06482;
+    text-align: center;
+}
+
+select {
+    width: 130px;
+    margin: 15px;
+    padding: 5px;
+}
+
+section {
+ background-color: aliceblue;
+ color: #e45c9b;
+ border-radius: 5px;
+ padding: 1em;
+ width: 31.25em;
+ margin: auto; /*Margin: auto. centraliza???????? */
+ box-shadow: 3px 3px 10px rgba(226, 124, 132, 0.705);
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+}

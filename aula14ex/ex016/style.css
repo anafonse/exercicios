@@ -1,0 +1,37 @@
+::selection {
+    background-color: pink;
+    color: hotpink;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, #5cc0aa 0%, #730be4 100%); 
+    font: normal 14pt monospace;
+
+}
+
+header {
+    color: #fff;
+    text-align: center;
+}
+
+section {
+ background-color: #662d91;
+ color: #fff;
+ border-radius: 5px;
+ padding: 1em;
+ width: 500px;
+ margin: auto; /*Margin: auto. centraliza???????? */
+ box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.26);
+}
+
+footer {
+    color: hotpink;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+}
